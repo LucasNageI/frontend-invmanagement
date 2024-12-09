@@ -1,0 +1,108 @@
+.landing-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 800px;
+}
+
+.landing-title-and-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.landing-logo {
+  width: 50px;
+  height: auto;
+}
+
+.landing-title {
+  color: #66676b;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.landing-slogan {
+  color: #66676b;
+  font-size: 3.5rem;
+  overflow: hidden;
+  padding-right: 5px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  animation: colorShift 2s infinite;
+}
+
+.highlight {
+  color: #7581ff;
+  font-size: 4rem;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #7581ff;
+  }
+  50% {
+    color: #66676b;
+  }
+  100% {
+    color: #7581ff;
+  }
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.landing-button {
+  color: #ffffff;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.landing-login {
+  background-color: #ffffff;
+  color: #66676b;
+  font-weight: bold;
+}
+
+.landing-login:hover {
+  background-color: #66676b;
+  color: #ffffff;
+}
+
+.get-started {
+  color: #66676b;
+  border: 2px solid #66676b;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.get-started:hover {
+  color: #ffffff;
+  background-color: #66676b;
+}
+
+@media screen and (min-width: 700px) {
+  .landing-slogan {
+    max-width: 1000px;
+    font-size: 5rem;
+  }
+
+  .highlight {
+    font-size: 6rem;
+  }
+}

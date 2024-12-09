@@ -1,0 +1,18 @@
+.add-company-container {
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 50px;
+  background-color: #ededed;
+}
+
+@media screen and (max-width: 700px) {
+  .add-company-container {
+    width: 300px;
+  }
+}

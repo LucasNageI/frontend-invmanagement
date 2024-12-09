@@ -1,0 +1,279 @@
+.employees-container {
+  width: calc(100% - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 180px;
+}
+
+.search-input {
+  color: #4a4a4b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 50px;
+  background-color: #ededed;
+  padding: 5px;
+  height: 40px;
+  width: 80%;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: #ededed;
+}
+
+.search-input::placeholder {
+  color: #858585;
+  font-size: 14px;
+}
+
+.employees-form {
+  margin: 20px 0;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ededed;
+  border-radius: 10px;
+}
+
+.employees-form-inputs-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.employees-form-labels {
+  color: #4a4a4b;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.employees-form-inputs {
+  padding: 10px;
+  background-color: #e0e1e4;
+  border: none;
+  border-radius: 5px;
+  color: #4a4a4b;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.employees-form-inputs:focus {
+  outline: none;
+}
+
+.form-submit-button {
+  background-color: #7581ff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.form-submit-button:hover {
+  background-color: #5a67ff;
+}
+
+.edit-button {
+  background-color: #7581ff;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  transition: all 0.3s ease;
+}
+
+.delete-button {
+  background-color: #ff4b2f;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  transition: all 0.3s ease;
+}
+
+.edit-employee-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 300px;
+  gap: 5px;
+}
+
+.save-edit-button {
+  background-color: #7581ff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.cancel-edit-button {
+  background-color: #ff4b2f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.employees-list {
+  list-style-type: none;
+  padding: 20px;
+  width: 80%;
+  background-color: #ededed;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 95vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.employees-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.employees-item div {
+  margin: 5px 0;
+  color: white;
+}
+
+.employees-actions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.no-employees-found-message {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.list-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #7581ff;
+}
+
+.list-span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.employee-info {
+  display: flex;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-icon {
+  font-size: 16px;
+}
+
+.employees-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.employees-actions .edit-button {
+  background-color: #fcc006;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.employees-actions .delete-button {
+  background-color: #ff4b2f;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+}
+
+.employees-actions button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+@media screen and (max-width: 499px) {
+  .employees-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .employees-list {
+    max-height: 85vh;
+  }
+
+  .search-input {
+    width: 90%;
+    height: 35px;
+  }
+
+  .employees-form {
+    padding: 15px;
+    margin-bottom: 100px;
+  }
+
+  .employees-form-inputs-container {
+    margin-bottom: 15px;
+  }
+
+  .employees-form-inputs {
+    font-size: 14px;
+  }
+
+  .form-submit-button {
+    font-size: 14px;
+  }
+}
