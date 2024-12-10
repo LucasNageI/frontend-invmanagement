@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import "../styles/screen_styles/JoinCompany.css"
-import { verifyBusinessKey, getAuthToken } from "../utils"
+import { verifyBusinessKey } from "../utils"
+import getAuthToken from "../utils/getAuthToken.js"
 
 const JoinCompany = () => {
   const [errorMessage, setErrorMessage] = useState("")
